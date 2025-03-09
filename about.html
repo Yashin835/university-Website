@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>University Website</title>
+</head>
+
+<body>
+    <section class="Sub-Background">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="logo "></a>
+            <div class="nav-links" id="nav-links">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="index.html">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+    </section>
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique suscipit, labore debitis atque
+            <br>
+            explicabo qui praesentium magni incidunt. Tempore sit unde quidem minus possimus?
+        </p>
+        <div class="icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-linkedin'></i>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are World Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam dolores qui excepturi fuga
+                    iste quaerat quos, blanditiis doloribus rerum laboriosam suscipit amet molestias aut voluptas
+                    repellat ex velit maiores deleniti. Repellat ea eaque nobis corrupti culpa quo iste laborum vitae,
+                    maxime consequatur quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vel aut
+                    reiciendis saepe. Sequi est, a libero dolorem error delectus non corrupti!</p>
+                <a href="" class="hero-button red-button">Explore us now</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg" alt="about">
+            </div>
+        </div>
+    </section>
+    <script>
+function showMenu() {
+    document.getElementById("nav-links").style.right = "0";
+    document.body.style.overflow = "hidden"; 
+}
+
+function hideMenu() {
+    document.getElementById("nav-links").style.right = "-200px"; 
+    document.body.style.overflow = "auto";
+}
+
+    </script>
+</body>
+
+</html>
