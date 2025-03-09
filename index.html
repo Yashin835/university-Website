@@ -15,13 +15,13 @@
 <body>
     <section class="Background">
         <nav>
-            <a href="index.html"><img src="logo.png"></a>
-            <div class="nav-links" id="nav-links">
+            <a href="index.html"><img src="logo.png" alt="logo "></a>
+            <div class="nav-links">
                 <i class='bx bx-x' onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">COURSE</a></li>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="#" id="course-link">COURSE</a></li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
@@ -36,14 +36,112 @@
             <a class="hero-button" href="#">Visit us to know more</a>
         </div>
     </section>
+    <section class="course" id="course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus accusantium sunt?</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, repellat commodi repudiandae possimus
+                voluptates odit incidunt expedita sapiente sint esse exercitationem animi hic corporis tenetur! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, repellat commodi repudiandae possimus
+                voluptates odit incidunt expedita sapiente sint esse exercitationem animi hic corporis tenetur! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduation</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, repellat commodi repudiandae possimus
+                voluptates odit incidunt expedita sapiente sint esse exercitationem animi hic corporis tenetur! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+    </section>
+    <section class="Campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="london.png" alt="london">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="newyork.png" alt="newyork">
+                <div class="layer">
+                    <h3>NEWYORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="washington.png" alt="washington">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ipsum!</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="library.png" alt="library">
+                <h3>Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti dolorem ipsa
+                    quibusdam
+                    neque eius.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="basketball.png" alt="basketball">
+                <h3>PLay Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti dolorem ipsa
+                    quibusdam
+                    neque eius.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="cafeteria.png" alt="library">
+                <h3>Tasty and healty food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti dolorem ipsa
+                    quibusdam
+                    neque eius.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h1>Enroll For Our Various Online Course Anywhere From The World</h1>
+        <a href="" class="hero-button">Contact Us</a>
+    </section>
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique suscipit, labore debitis atque
+            <br>
+            explicabo qui praesentium magni incidunt. Tempore sit unde quidem minus possimus?
+        </p>
+        <div class="icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-linkedin'></i>
+        </div>
+    </section>
     <script>
-        var navlinks = document.getElementById("nav-links");
-        function showMenu(){
-            navlinks.style.right = "0";
+        function showMenu() {
+            document.getElementById("nav-links").style.right = "0";
+            document.body.style.overflow = "hidden";
         }
-        function hideMenu(){
-            navlinks.style.right = "-250px";
+        function hideMenu() {
+            document.getElementById("nav-links").style.right = "-250px";
         }
+
+        document.getElementById("course-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("course").scrollIntoView({ behavior: "smooth" });
+        });
+
     </script>
 </body>
 
